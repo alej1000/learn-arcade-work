@@ -57,7 +57,10 @@ arcade.draw_circle_outline(125,360,40,arcade.color.BLACK,10)
 arcade.draw_arc_outline(150,365,60,80,arcade.color.BLACK,200,250,20)
 # Ojo
 arcade.draw_circle_filled(140,365,5,arcade.color.BLACK)
-
+# Brazo Izquierdo
+arcade.draw_rectangle_filled(97,300,20,80,arcade.color.BLACK,150)
+# Brazo derecho
+arcade.draw_rectangle_filled(133,300,20,80,arcade.color.BLACK,-145)
 
 
 
