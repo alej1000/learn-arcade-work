@@ -43,6 +43,15 @@ arcade.draw_rectangle_filled(0,600,10,300,arcade.color.YELLOW,330)
 arcade.draw_rectangle_filled(0,600,10,300,arcade.color.YELLOW,350)
 arcade.draw_rectangle_filled(0,600,10,300,arcade.color.YELLOW,310)
 
+# Dibujar Stickman
+
+# Pierna izquierda
+arcade.draw_rectangle_filled(100,200,20,80,arcade.color.BLACK,20)
+# Pierna derecha
+arcade.draw_rectangle_filled(130,200,20,80,arcade.color.BLACK,340)
+# Cuerpo
+arcade.draw_rectangle_filled(115,270,20,100,arcade.color.BLACK)
+
 
 # --- Finish drawing ---
 arcade.finish_render()
