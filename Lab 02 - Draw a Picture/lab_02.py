@@ -64,7 +64,14 @@ arcade.draw_rectangle_filled(97,300,20,80,arcade.color.BLACK,150)
 arcade.draw_rectangle_filled(133,300,20,80,arcade.color.BLACK,-145)
 
 # Dibujar coche
-arcade.draw_rectangle_filled(550,280,250,150,arcade.color.RED)
+arcade.draw_rectangle_filled(550,270,250,80,arcade.color.GRAY)
+arcade.draw_triangle_filled(425,310,675,310,550,365,arcade.color.GRAY_BLUE)
+
+
+
+
+
+#arcade.draw_text("Tesla",400,300,arcade.color.GOLD)
 
 
 # Función ruedas
