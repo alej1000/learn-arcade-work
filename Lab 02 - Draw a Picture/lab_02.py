@@ -51,6 +51,9 @@ arcade.draw_rectangle_filled(100,200,20,80,arcade.color.BLACK,20)
 arcade.draw_rectangle_filled(130,200,20,80,arcade.color.BLACK,340)
 # Cuerpo
 arcade.draw_rectangle_filled(115,270,20,100,arcade.color.BLACK)
+# Cabeza
+arcade.draw_circle_outline(125,360,40,arcade.color.BLACK,10)
+
 
 
 # --- Finish drawing ---
