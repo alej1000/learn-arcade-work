@@ -74,7 +74,6 @@ arcade.draw_rectangle_filled(550,332,5,33,arcade.color.BLACK)
 
 # Marca tesla
 arcade.draw_text("Tesla Cybertruck",550,250,arcade.color.BLACK)
-
 # Función ruedas
 def dibujar_rueda(x_centro,y_centro,radio,color=arcade.color.GRAY):
     """int,int,float,object->None
@@ -95,7 +94,15 @@ dibujar_rueda(480,200,40)
 # Rueda derecha
 dibujar_rueda(620,200,40)
 
-
+# Avión de papel
+# Forma del avión
+arcade.draw_polygon_outline([[370,530],[400,480],[420,500],[430,470],[440,510],[460,520]],arcade.color.WHITE)
+# Linea que va al medio de un ala
+arcade.draw_polygon_outline([[370,530],[420,500]],arcade.color.WHITE)
+# Linea que va al medio de otro ala
+arcade.draw_polygon_outline([[370,530],[440,510]],arcade.color.WHITE)
+# Linea que va al punto medio de la línea entre los puntos 2 y 3 (Sacado matemáticamente; M=(A+B)/2
+arcade.draw_polygon_outline([[430,470],[410,490]],arcade.color.WHITE)
 
 
 # --- Finish drawing ---
