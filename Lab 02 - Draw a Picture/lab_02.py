@@ -53,6 +53,12 @@ arcade.draw_rectangle_filled(130,200,20,80,arcade.color.BLACK,340)
 arcade.draw_rectangle_filled(115,270,20,100,arcade.color.BLACK)
 # Cabeza
 arcade.draw_circle_outline(125,360,40,arcade.color.BLACK,10)
+# Boca
+arcade.draw_arc_outline(150,365,60,80,arcade.color.BLACK,200,250,20)
+
+
+
+
 
 
 
