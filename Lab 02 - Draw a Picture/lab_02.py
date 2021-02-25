@@ -33,6 +33,7 @@ def dibujar_nube(x_centro,y_centro,radio,color=arcade.color.WHITE):
     arcade.draw_circle_filled(x_centro-100, y_centro-20, radio, color)
 
 dibujar_nube(670,490,20)
+dibujar_nube(300,530,30)
 
 # Dibujar el sol
 arcade.draw_circle_filled(0,600,100,arcade.color.YELLOW)
@@ -62,7 +63,29 @@ arcade.draw_rectangle_filled(97,300,20,80,arcade.color.BLACK,150)
 # Brazo derecho
 arcade.draw_rectangle_filled(133,300,20,80,arcade.color.BLACK,-145)
 
+# Dibujar coche
+arcade.draw_rectangle_filled(550,280,250,150,arcade.color.RED)
 
+
+# Función ruedas
+def dibujar_rueda(x_centro,y_centro,radio,color=arcade.color.GRAY):
+    """int,int,float,object->None
+    OBJ: Dibujar una rueda
+    """
+    # Rueda
+    arcade.draw_circle_filled(x_centro, y_centro, radio, color)
+    # Neumático
+    arcade.draw_circle_outline(x_centro, y_centro, radio,arcade.color.BLACK, 5)
+    # Eje
+    arcade.draw_circle_filled(x_centro,y_centro,3,arcade.color.BLACK)
+    # Radios
+    for radios in range(4):
+        arcade.draw_rectangle_filled(x_centro, y_centro, 2, radio*2, arcade.color.BLACK,radios*45)
+
+# Rueda izquierda
+dibujar_rueda(480,200,40)
+# Rueda derecha
+dibujar_rueda(620,200,40)
 
 
 
