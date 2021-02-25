@@ -55,6 +55,8 @@ arcade.draw_rectangle_filled(115,270,20,100,arcade.color.BLACK)
 arcade.draw_circle_outline(125,360,40,arcade.color.BLACK,10)
 # Boca
 arcade.draw_arc_outline(150,365,60,80,arcade.color.BLACK,200,250,20)
+# Ojo
+arcade.draw_circle_filled(140,365,5,arcade.color.BLACK)
 
 
 
