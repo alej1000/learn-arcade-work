@@ -63,16 +63,17 @@ arcade.draw_rectangle_filled(97,300,20,80,arcade.color.BLACK,150)
 # Brazo derecho
 arcade.draw_rectangle_filled(133,300,20,80,arcade.color.BLACK,-145)
 
-# Dibujar coche
+# Dibujar coche Tesla
 arcade.draw_rectangle_filled(550,270,250,80,arcade.color.GRAY)
 arcade.draw_triangle_filled(425,310,675,310,550,365,arcade.color.GRAY_BLUE)
 
+# Ventanas
+arcade.draw_polygon_filled([[455,315],[610,320],[590,335],[550,350]],arcade.color.BLACK_OLIVE)
+arcade.draw_polygon_outline([[455,315],[610,320],[590,335],[550,350]],arcade.color.BLACK,5)
+arcade.draw_rectangle_filled(550,332,5,33,arcade.color.BLACK)
 
-
-
-
-#arcade.draw_text("Tesla",400,300,arcade.color.GOLD)
-
+# Marca tesla
+arcade.draw_text("Tesla Cybertruck",550,250,arcade.color.BLACK)
 
 # Función ruedas
 def dibujar_rueda(x_centro,y_centro,radio,color=arcade.color.GRAY):
