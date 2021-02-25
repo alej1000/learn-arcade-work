@@ -34,10 +34,15 @@ def dibujar_nube(x_centro,y_centro,radio,color=arcade.color.WHITE):
 
 dibujar_nube(670,490,20)
 
-
-
 # Dibujar el sol
 arcade.draw_circle_filled(0,600,100,arcade.color.YELLOW)
+# Dibujar los rayos del sol
+arcade.draw_rectangle_filled(0,600,10,300,arcade.color.YELLOW,290)
+arcade.draw_rectangle_filled(0,600,10,300,arcade.color.YELLOW,275)
+arcade.draw_rectangle_filled(0,600,10,300,arcade.color.YELLOW,330)
+arcade.draw_rectangle_filled(0,600,10,300,arcade.color.YELLOW,350)
+arcade.draw_rectangle_filled(0,600,10,300,arcade.color.YELLOW,310)
+
 
 # --- Finish drawing ---
 arcade.finish_render()
